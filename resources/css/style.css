@@ -1,0 +1,47 @@
+html {
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Desktop Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.logo-plus-name {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: lighter; 
+    font-size: 32px;
+    color: gray;  
+}
+
+.logo {
+    height: 64px;
+    padding-left: 1rem;  
+}
+
+header span {
+    font-weight: 500;
+    color: black;
+}
+
+nav a {
+    font-weight: lighter;
+    color: darkslategray;
+    padding: 0 8px;
+}
+
+nav a:hover {
+    color: deeppink;
+}
