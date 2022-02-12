@@ -9,7 +9,19 @@ a {
     text-decoration: none;
 }
 
-/* Desktop Header */
+.section-container {
+    width: 95%;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+/* Header */
 
 header {
     display: flex;
@@ -18,6 +30,7 @@ header {
     height: 4rem;
     position: fixed;
     width: 100%;
+    background-color: white;
 }
 
 .logo-plus-name {
@@ -34,7 +47,7 @@ header {
     padding-left: 1.5rem;
 }
 
-header span {
+.logo-plus-name span {
     font-weight: 500;
     color: black;
 }
@@ -89,7 +102,7 @@ nav a:hover {
     }
 
     nav {
-        width:75%; 
+        width: 75%; 
         justify-content: space-around;
     }
 
@@ -100,4 +113,21 @@ nav a:hover {
     .logo {
         padding-right: 1.5rem;
     }
+}
+
+                /* Main Section */
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+                /* Banner Section */
+
+.section-container {
+    display: flex;
+}
+
+.banner-section .img-container {
+    width: 60%;
 }
