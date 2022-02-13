@@ -9,11 +9,6 @@ a {
     text-decoration: none;
 }
 
-.section-container {
-    width: 95%;
-    margin: 0 auto;
-}
-
 .img-container {
     overflow: hidden;
 }
@@ -32,6 +27,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 10;
 }
 
 .logo-plus-name {
@@ -69,14 +65,18 @@ nav a:hover {
 }
 
 /* Desktop header */
+
 @media only screen and (min-width: 1001px) {
+   
     .mobile-header {
         display: none;
     }
 }
 
 /* Tablet header */
+
 @media only screen and (min-width: 641px) and (max-width: 1000px) {
+   
     .desktop-header {
         display: none;
     }
@@ -99,6 +99,7 @@ nav a:hover {
 /* Mobile header */
 
 @media only screen and (max-width: 640px) {
+  
     .desktop-header {
         display: none;
     }
@@ -124,26 +125,33 @@ main {
     top: 4rem;
 }
 
+.section-container {
+    width: 100%;
+    display: flex;
+}
+
 /* Banner Section */
 
 .banner-section {
     background-color: lightgray;
 }
 
-.section-container {
-    display: flex;
-}
-
-.banner-section .img-container {
+.primary-container {
     width: 60%;
+    padding: 2rem 0 2rem 1.5rem;
 }
 
-.banner-section .text-container {
+.secondary-container {
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 1.5rem;
     color: darkslategray;
+}
+
+.description-box {
+    width: 90%;
 }
 
 .banner-section h1 {
@@ -152,13 +160,21 @@ main {
     line-height: 1.5;
 }
 
+.banner-section p {
+    padding: 1.25rem 0;
+    line-height: 1.5;
+}
+
 .banner-section .button {
     display: flex;
     padding: 8px 0;
-    width: 60%;
+    width: 100%;
     height: 1.875rem;
     background-color: darkslategray;
     color: white;
     justify-content: center;
     align-items: center;
 }
+
+/* Information Sectin */
+
