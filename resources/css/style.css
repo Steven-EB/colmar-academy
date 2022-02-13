@@ -173,8 +173,15 @@ main {
     background-color: darkslategray;
     color: white;
     justify-content: center;
-    align-items: center;
 }
 
-/* Information Sectin */
+/* Information Section */
+
+.secondary-info {
+    display: flex;
+}
+
+.information-section .secondary-container .img-container {
+    width: 35%;
+}
 
