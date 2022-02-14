@@ -187,6 +187,10 @@ hr {
     justify-content: center;
 }
 
+.banner-section .text-info-box {
+    padding: 1rem;
+}
+
 .banner-section h1 {
     font-size: 24px;
     font-weight: bold;
@@ -213,9 +217,10 @@ hr {
     border-right: 1px lightgray solid;
 }
 
-.information-section .primary-container h2 {
+.primary-container h2 {
     font-size: 24px;
     font-weight: bold;
+    color: darkslategray;
     padding-top: 32px;
 }
 
@@ -225,7 +230,12 @@ hr {
 
 .information-section .caption {
     font-size: 12px;
+    font-weight: 400;
     padding-top: 32px;
+}
+
+.information-section .secondary-container {
+    margin-bottom: 32px;
 }
 
 .information-section .secondary-container .img-container {
@@ -235,5 +245,45 @@ hr {
 
 .information-section .description-box {
     line-height: 1.1;
+}
+
+/* Learning Section */
+
+.learning-section {
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.learning-section .primary-container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.learning-section .secondary-container {
+    width: 100%;
+}
+
+.learning-section .secondary-info-box {
+    display: block;
+    width: 30%;
+    text-align: left;
+    background-color: white;
+    padding: 0;
+    margin: 1rem;
+}
+
+.learning-section .text-info-box {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.learning-section .secondary-info-box a {
+    display: inline;
+    color: darkslategray;
+}
+
+.learning-section .secondary-info-box a:hover {
+    color: deeppink;
 }
 
