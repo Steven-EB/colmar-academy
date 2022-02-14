@@ -118,7 +118,7 @@ nav a:hover {
     }
 }
 
-/* Main Section */
+/* Main Section – shared stylings across all or most main sections */
 
 main {
     position: relative;
@@ -177,11 +177,7 @@ hr {
 }
 
 
-/* Banner Section */
-
-.banner-section {
-    background-color: lightgray;
-}
+/* Banner Section specific */
 
 .banner-section .secondary-container {
     justify-content: center;
@@ -211,7 +207,7 @@ hr {
     align-items: center;
 }
 
-/* Information Section */
+/* Information Section specific */
 
 .information-section .primary-container {
     border-right: 1px lightgray solid;
@@ -247,12 +243,11 @@ hr {
     line-height: 1.1;
 }
 
-/* Learning Section */
+/* Learning Section specific */
 
 .learning-section {
     display: block;
     width: 100%;
-    background-color: lightgray;
 }
 
 .learning-section .primary-container {
@@ -263,11 +258,15 @@ hr {
 
 .learning-section .secondary-container {
     width: 100%;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem 4.5rem;
 }
 
 .learning-section .secondary-info-box {
     display: block;
-    width: 30%;
+    width: 27%;
     text-align: left;
     background-color: white;
     padding: 0;
