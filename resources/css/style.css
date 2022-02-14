@@ -1,5 +1,5 @@
 html {
-    font-size: 1rem;
+    font-size: 16px;
     background-color: white;
     color: black;
     font-family: sans-serif;
@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    height: 4rem;
+    height: 64px;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -35,13 +35,13 @@ header {
     align-items: center;
     text-transform: uppercase;
     font-weight: lighter; 
-    font-size: 32px;
+    font-size: 2rem;
     color: gray;  
 }
 
 .logo {
-    height: 64px; 
-    padding-left: 1.5rem;
+    height: 4rem; 
+    padding-left: 24px;
 }
 
 .logo-plus-name span {
@@ -51,13 +51,13 @@ header {
 
 nav {
     display: flex;
-    padding-right: 1.5rem;
+    padding-right: 24px;
 }
 
 nav a {
     font-weight: lighter;
     color: darkslategray;
-    padding: 0 8px;
+    padding: 0 .5rem;
 }
 
 nav a:hover {
@@ -66,7 +66,7 @@ nav a:hover {
 
 /* Desktop header */
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 62.5625rem) {
    
     .mobile-header {
         display: none;
@@ -75,7 +75,7 @@ nav a:hover {
 
 /* Tablet header */
 
-@media only screen and (min-width: 641px) and (max-width: 1000px) {
+@media only screen and (min-width: 40.0625rem) and (max-width: 62.5rem) {
    
     .desktop-header {
         display: none;
@@ -88,17 +88,17 @@ nav a:hover {
 
     .desktop-header.tablet-header {
         display: block;
-        padding-right: 2rem;
+        padding-right: 32px;
     }
 
     .mobile-header {
-        padding: 0 1rem;
+        padding: 0 16px;
     }
 }
 
 /* Mobile header */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 40rem) {
   
     .desktop-header {
         display: none;
@@ -110,11 +110,11 @@ nav a:hover {
     }
 
     nav a {
-        padding: 1rem;
+        padding: 16px;
     }
 
     .logo {
-        padding-right: 1.5rem;
+        padding-right: 24px;
     }
 }
 
@@ -122,13 +122,60 @@ nav a:hover {
 
 main {
     position: relative;
-    top: 4rem;
+    top: 64px;
 }
 
-.section-container {
+section {
     width: 100%;
     display: flex;
 }
+
+.primary-container {
+    width: 60%;
+    padding: 32px 24px 32px 24px;
+}
+
+.secondary-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: darkslategray;
+}
+
+.secondary-info-box {
+    display: flex;
+    padding: 2rem 1rem;
+    height: auto;
+}
+
+hr {
+    border: 1px solid lightgray;
+    width: 100%
+}
+
+.text-info-box {
+    width: 90%;
+    color: darkslategray;
+    line-height: 1.5;
+    font-size: 16px;
+}    
+
+.text-info-box h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.text-info-box p, .text-info-box a {
+    display: block;
+    font-weight: 200;
+    padding-top: 8px;
+}
+
+.gray-background {
+    background-color: lightgray;
+}
+
 
 /* Banner Section */
 
@@ -136,52 +183,57 @@ main {
     background-color: lightgray;
 }
 
-.primary-container {
-    width: 60%;
-    padding: 2rem 0 2rem 1.5rem;
-}
-
-.secondary-container {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
+.banner-section .secondary-container {
     justify-content: center;
-    padding-left: 1.5rem;
-    color: darkslategray;
-}
-
-.description-box {
-    width: 90%;
 }
 
 .banner-section h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
 .banner-section p {
-    padding: 1.25rem 0;
-    line-height: 1.5;
+    padding: 20px 0;
 }
 
 .banner-section .button {
     display: flex;
-    padding: 8px 0;
+    padding: .5rem 0;
     width: 100%;
-    height: 1.875rem;
+    height: 30px;
     background-color: darkslategray;
     color: white;
     justify-content: center;
+    align-items: center;
 }
 
 /* Information Section */
 
-.secondary-info {
-    display: flex;
+.information-section .primary-container {
+    border-right: 1px lightgray solid;
+}
+
+.information-section .primary-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 32px;
+}
+
+.information-section .primary-container p {
+    padding-top: 24px;
+}
+
+.information-section .caption {
+    font-size: 12px;
+    padding-top: 32px;
 }
 
 .information-section .secondary-container .img-container {
-    width: 35%;
+    width: 35%;  
+    padding-right: 1rem;
+}
+
+.information-section .description-box {
+    line-height: 1.1;
 }
 
