@@ -5,6 +5,10 @@ html {
     font-family: sans-serif;
 }
 
+body {
+    padding-top: 4rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -29,6 +33,7 @@ header {
     align-items: center;  
     height: 64px;
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: white;
     z-index: 10;
@@ -123,11 +128,6 @@ nav a:hover {
 }
 
 /* Main Section – shared stylings across all or most main sections */
-
-main {
-    position: relative;
-    top: 64px;
-}
 
 section {
     width: 100%;
@@ -326,4 +326,25 @@ hr {
 
 .thesis-section .description-box {
     line-height: 1.1;
+}
+
+/* Footer specific */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    color: darkslategray;
+    font-size: .75rem;
+    border-top: 1px lightgray solid;
+}
+
+footer a {
+    font-weight: lighter;
+    color: darkslategray;
+    padding: 0 0.5rem;
+}
+
+footer a:hover {
+    color: deeppink;
 }
