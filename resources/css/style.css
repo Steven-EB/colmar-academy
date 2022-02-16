@@ -242,6 +242,13 @@ nav a {
     margin-bottom: 2rem;
 }
 
+.information-section .secondary-info-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    flex-grow: 1;
+}
+
 .information-section .secondary-container .img-container {
     width: 35%;  
     padding-right: 1rem;
