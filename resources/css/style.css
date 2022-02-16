@@ -1,3 +1,5 @@
+/* Site wide styling choices */
+
 html {
     font-size: 16px;
     background-color: white;
@@ -9,8 +11,36 @@ body {
     padding-top: 4rem;
 }
 
+section {
+    width: 100%;
+    display: flex;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkslategray;
+    padding-top: 32px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 a {
     text-decoration: none;
+    font-weight: lighter;
+    color: darkslategray;
+}
+
+a:hover {
+    color: deeppink;
 }
 
 .img-container {
@@ -23,6 +53,47 @@ img {
 
 video {
     width: 100%;
+}
+
+hr {
+    border: 1px solid lightgray;
+    width: 100%
+}
+
+.title-container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.primary-container {
+    width: 60%;
+    padding: 32px 24px 32px 24px;
+}
+
+.secondary-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: darkslategray;
+}
+
+.secondary-info-box {
+    display: flex;
+    padding: 2rem 1rem;
+    height: auto;
+}
+
+.text-info-box {
+    width: 90%;
+    color: darkslategray;
+    line-height: 1.5;
+    font-size: 16px;
+}    
+
+.gray-background {
+    background-color: lightgray;
 }
 
 /* Header */
@@ -64,13 +135,7 @@ nav {
 }
 
 nav a {
-    font-weight: lighter;
-    color: darkslategray;
     padding: 0 .5rem;
-}
-
-nav a:hover {
-    color: deeppink;
 }
 
 /* Desktop header */
@@ -127,74 +192,7 @@ nav a:hover {
     }
 }
 
-/* Main Section – shared stylings across all or most main sections */
-
-section {
-    width: 100%;
-    display: flex;
-}
-
-.title-container {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: darkslategray;
-    padding-top: 32px;
-}
-
-.primary-container {
-    width: 60%;
-    padding: 32px 24px 32px 24px;
-}
-
-.secondary-container {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: darkslategray;
-}
-
-.secondary-info-box {
-    display: flex;
-    padding: 2rem 1rem;
-    height: auto;
-}
-
-hr {
-    border: 1px solid lightgray;
-    width: 100%
-}
-
-.text-info-box {
-    width: 90%;
-    color: darkslategray;
-    line-height: 1.5;
-    font-size: 16px;
-}    
-
-.text-info-box h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.text-info-box p, .text-info-box a {
-    display: block;
-    font-weight: 200;
-    padding-top: 8px;
-}
-
-.gray-background {
-    background-color: lightgray;
-}
-
-
-/* Banner Section specific */
+/* Banner Section  */
 
 .banner-section .secondary-container {
     justify-content: center;
@@ -202,11 +200,6 @@ hr {
 
 .banner-section .text-info-box {
     padding: 1rem;
-}
-
-.banner-section h1 {
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .banner-section p {
@@ -224,7 +217,12 @@ hr {
     align-items: center;
 }
 
-/* Information Section specific */
+.banner-section .button:hover {
+    color: deeppink;
+    background-color: rgb(40, 40, 90);
+}
+
+/* Information Section */
 
 .information-section .primary-container {
     border-right: 1px lightgray solid;
@@ -253,7 +251,21 @@ hr {
     line-height: 1.1;
 }
 
-/* Learning Section specific */
+.information-section .text-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information-section a {
+    color: blue;
+}
+
+.information-section a:hover {
+    color: deeppink;
+}
+
+/* Learning Section */
 
 .learning-section {
     display: block;
@@ -281,17 +293,11 @@ hr {
     padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.learning-section .secondary-info-box a {
+.learning-section a {
     display: inline;
-    color: darkslategray;
 }
 
-.learning-section .secondary-info-box a:hover {
-    color: deeppink;
-}
-
-
-/* Thesis Section specific */
+/* Thesis Section  */
 
 .thesis-section {
     display: block;
@@ -328,6 +334,11 @@ hr {
     line-height: 1.1;
 }
 
+.thesis-section .text-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* Footer specific */
 
 footer {
@@ -340,11 +351,5 @@ footer {
 }
 
 footer a {
-    font-weight: lighter;
-    color: darkslategray;
-    padding: 0 0.5rem;
-}
-
-footer a:hover {
-    color: deeppink;
+    padding: 0 .5rem;
 }
