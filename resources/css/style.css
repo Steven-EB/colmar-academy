@@ -13,7 +13,11 @@ a {
     overflow: hidden;
 }
 
-.img-container img {
+img {
+    width: 100%;
+}
+
+video {
     width: 100%;
 }
 
@@ -130,6 +134,19 @@ section {
     display: flex;
 }
 
+.title-container {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkslategray;
+    padding-top: 32px;
+}
+
 .primary-container {
     width: 60%;
     padding: 32px 24px 32px 24px;
@@ -213,25 +230,18 @@ hr {
     border-right: 1px lightgray solid;
 }
 
-.primary-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: darkslategray;
-    padding-top: 32px;
-}
-
 .information-section .primary-container p {
-    padding-top: 24px;
+    padding-top: 1.5rem;
 }
 
 .information-section .caption {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .information-section .secondary-container {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .information-section .secondary-container .img-container {
@@ -248,12 +258,6 @@ hr {
 .learning-section {
     display: block;
     width: 100%;
-}
-
-.learning-section .primary-container {
-    width: 100%;
-    text-align: center;
-    padding: 0;
 }
 
 .learning-section .secondary-container {
@@ -286,3 +290,40 @@ hr {
     color: deeppink;
 }
 
+
+/* Thesis Section specific */
+
+.thesis-section {
+    display: block;
+}
+
+.thesis-section h2 {
+    padding: 1.5rem 0;
+}
+
+.thesis-flex-container {
+    display: flex;
+}
+
+.thesis-section .primary-container {
+    padding-top: 0;
+}
+
+.thesis-section .primary-container p {
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+}
+
+.thesis-section .secondary-container {
+    margin-bottom: 2rem;
+    justify-content: flex-start;
+}
+
+.thesis-section .secondary-container .img-container {
+    width: 35%;  
+    padding-right: 1rem;
+}
+
+.thesis-section .description-box {
+    line-height: 1.1;
+}
