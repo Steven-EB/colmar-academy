@@ -141,56 +141,55 @@ nav a {
 /* Desktop header */
 
 @media only screen and (min-width: 62.5625rem) {
-   
-    .mobile-header {
+    .tablet-mobile-header {
         display: none;
     }
+
+
+
 }
+   
+
 
 /* Tablet header */
 
 @media only screen and (min-width: 40.0625rem) and (max-width: 62.5rem) {
-   
-    .desktop-header {
-        display: none;
-    }
-
-    nav {
-        width: 40%;
-        justify-content: space-between;  
-    }
-
-    .desktop-header.tablet-header {
-        display: block;
-        padding-right: 32px;
-    }
-
-    .mobile-header {
-        padding: 0 16px;
-    }
-}
-
-/* Mobile header */
-
-@media only screen and (max-width: 40rem) {
   
     .desktop-header {
         display: none;
     }
 
-    nav {
-        width: 75%; 
+nav {
+        width: 50%;
         justify-content: space-around;
+        padding-left: 3rem;
     }
 
-    nav a {
-        padding: 16px;
-    }
 
-    .logo {
-        padding-right: 24px;
-    }
+
 }
+   
+
+/* Mobile header */
+
+@media only screen and (max-width: 40rem) {
+
+    .desktop-header, .desktop-tablet-header {
+        display: none;
+    }
+
+    nav {
+        width: 75%;
+        justify-content: space-around;
+        padding-left: 3rem;
+    }
+
+  
+
+
+}
+
+
 
 /* Banner Section  */
 
