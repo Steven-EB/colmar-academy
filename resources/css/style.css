@@ -1,4 +1,4 @@
-/* Site wide styling choices */
+/* PAGE WIDE styling choices */
 
 html {
     font-size: 16px;
@@ -96,7 +96,20 @@ hr {
     background-color: lightgray;
 }
 
-/* Header */
+/* ALL MOBILE sections stylings */
+
+@media only screen and (max-width: 40rem) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    section {
+        display: block;
+    }
+}
+
+/* HEADER */
 
 header {
     display: flex;
@@ -138,20 +151,15 @@ nav a {
     padding: 0 .5rem;
 }
 
-/* Desktop header */
+/* DESKTOP header */
 
 @media only screen and (min-width: 62.5625rem) {
     .tablet-mobile-header {
         display: none;
     }
-
-
-
 }
    
-
-
-/* Tablet header */
+/* TABLET header */
 
 @media only screen and (min-width: 40.0625rem) and (max-width: 62.5rem) {
   
@@ -164,13 +172,9 @@ nav {
         justify-content: space-around;
         padding-left: 3rem;
     }
-
-
-
 }
    
-
-/* Mobile header */
+/* MOBILE header */
 
 @media only screen and (max-width: 40rem) {
 
@@ -183,18 +187,13 @@ nav {
         justify-content: space-around;
         padding-left: 3rem;
     }
-
-  
-
-
 }
 
-
-
-/* Banner Section  */
+/* BANNER Section (DESKTOP and TABLET the same)  */
 
 .banner-section .secondary-container {
     justify-content: center;
+    padding-right: 1.5rem;
 }
 
 .banner-section .text-info-box {
@@ -202,7 +201,7 @@ nav {
 }
 
 .banner-section p {
-    padding: 20px 0;
+    padding: 2rem 0 1.5rem 0;
 }
 
 .banner-section .button {
@@ -220,6 +219,30 @@ nav {
     color: deeppink;
     background-color: rgb(40, 40, 90);
 }
+
+/* Banner section -- MOBILE ONLY */
+
+@media only screen and (max-width: 40rem) {
+
+    .banner-section .primary-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-section .secondary-container {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .banner-section .text-info-box {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+
+
 
 /* Information Section */
 
