@@ -1,5 +1,7 @@
 /* PAGE WIDE styling choices */
-
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 16px;
     background-color: white;
@@ -100,10 +102,6 @@ hr {
 
 @media only screen and (max-width: 40rem) {
 
-    * {
-        box-sizing: border-box;
-    }
-
     section {
         display: block;
     }
@@ -167,11 +165,16 @@ nav a {
         display: none;
     }
 
-nav {
+    nav {
         width: 50%;
         justify-content: space-around;
         padding-left: 3rem;
     }
+
+    .logo-plus-name {
+        min-width: 22.5rem;
+    }
+
 }
    
 /* MOBILE header */
@@ -240,11 +243,7 @@ nav {
     }
 }
 
-
-
-
-
-/* Information Section */
+/* Information Section DESKTOP and TABLET */
 
 .information-section .primary-container {
     border-right: 1px lightgray solid;
@@ -273,6 +272,7 @@ nav {
 
 .information-section .secondary-container .img-container {
     width: 35%;  
+    min-width: 6.625rem;
     padding-right: 1rem;
 }
 
@@ -292,6 +292,31 @@ nav {
 
 .information-section a:hover {
     color: deeppink;
+}
+
+/* Information Section MOBILE ONLY */
+
+@media only screen and (max-width: 40rem) {
+
+    .information-section .primary-container {
+        display: none;
+    }
+
+    .information-section .secondary-container {
+        width: 100%;
+    }
+
+    .information-section .secondary-info-box {
+        display: block;
+    }
+
+    .information-section .img-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    
+
 }
 
 /* Learning Section */
