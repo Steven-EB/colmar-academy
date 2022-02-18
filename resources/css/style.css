@@ -77,7 +77,6 @@ hr {
 
 .secondary-container {
     width: 40%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: darkslategray;
@@ -315,6 +314,7 @@ nav a {
 
     .information-section .secondary-info-box {
         border: 0;
+        flex-grow: 1;
     }
 
     .information-section .secondary-info-box .text-info-box {
@@ -335,6 +335,7 @@ section.learning-section {
 
 .learning-section .secondary-container {
     width: auto;
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     padding: 16px 60px;
@@ -356,6 +357,8 @@ section.learning-section {
 .learning-section a {
     display: inline;
 }
+
+/* Learning section MOBILE ONLY */
 
 @media only screen and (max-width: 639px) {
 
@@ -381,8 +384,6 @@ section.learning-section {
         width: auto;
         
     }
-
-   
 }
 
 /* Thesis Section  */
@@ -392,7 +393,8 @@ section.learning-section {
 }
 
 .thesis-section h2 {
-    padding: 24px 0;
+    padding: 2rem 0;
+    
 }
 
 .thesis-flex-container {
@@ -405,7 +407,6 @@ section.learning-section {
 
 .thesis-section .primary-container p {
     padding-top: 8px;
-    padding-bottom: 32px;
 }
 
 .thesis-section .secondary-container {
@@ -423,11 +424,30 @@ section.learning-section {
 }
 
 .thesis-section .text-info-box {
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-/* Footer specific */
+
+/* Thesis section MOBILE ONLY */
+
+@media only screen and (max-width: 639px) {
+
+    section.thesis-section {
+        border-top: 1px solid lightgray;
+        margin-top: 2rem;
+    }
+
+    .thesis-flex-container {
+        display: block;
+        width: auto;
+    }
+
+    .thesis-section .primary-container {
+        width: auto;
+    }
+}
+
+/* Footer */
 
 footer {
     display: flex;
@@ -440,4 +460,12 @@ footer {
 
 footer a {
     padding: 0 8px;
+}
+
+/* Footer MOBILE ONLY */
+
+@media only screen and (max-width: 639px) {
+    footer {
+        border: 0;
+    }
 }
