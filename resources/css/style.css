@@ -1,7 +1,9 @@
 /* PAGE WIDE styling choices */
+
 * {
     box-sizing: border-box;
 }
+
 html {
     font-size: 16px;
     background-color: white;
@@ -276,6 +278,10 @@ nav a {
     padding-right: 1rem;
 }
 
+.mobile-img {
+    display: none;
+}
+
 .information-section .description-box {
     line-height: 1.1;
 }
@@ -304,18 +310,38 @@ nav a {
 
     .information-section .secondary-container {
         width: 100%;
+        margin: 0;
     }
 
     .information-section .secondary-info-box {
         display: block;
     }
 
-    .information-section .img-container {
+    .information-section .secondary-info-box .img-container {
         width: 100%;
         padding: 0;
     }
 
-    
+    .desktop-tablet-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .information-section .secondary-info-box {
+        border: 0;
+    }
+
+    .information-section .secondary-info-box .text-info-box {
+        padding-top: 1rem;
+    }
+
+    .information-section .gray-background {
+        background-color: white;
+    }
 
 }
 
