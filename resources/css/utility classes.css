@@ -1,0 +1,46 @@
+/* Responsive utility classes for element display */
+
+/* Classes for all breakpoints (mobile-included) */
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/* Classes for tablet and larger screens */
+
+@media (min-width: 640px) {
+    .tablet-display-none {
+        display: none;
+    }
+    
+    .tablet-display-block {
+        display: block;
+    }
+    
+    .tablet-display-flex {
+        display: flex;
+    }
+}
+
+/* Classes for desktop and larger screens */
+
+@media (min-width: 1024px) {
+    .desktop-display-none {
+        display: none;
+    }
+    
+    .desktop-display-block {
+        display: block;
+    }
+    
+    .desktop-display-flex {
+        display: flex;
+    }
+}

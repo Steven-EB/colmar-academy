@@ -5,14 +5,14 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 1rem;
     background-color: white;
     color: black;
     font-family: sans-serif;
 }
 
 body {
-    padding-top: 4rem;
+    padding-top: 64px;
 }
 
 section {
@@ -21,19 +21,19 @@ section {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: darkslategray;
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -60,7 +60,7 @@ video {
 }
 
 hr {
-    border: 1px solid lightgray;
+    border: .0625rem solid lightgray;
     width: 100%
 }
 
@@ -72,7 +72,7 @@ hr {
 
 .primary-container {
     width: 60%;
-    padding: 32px 24px 32px 24px;
+    padding: 2rem 1.5rem 2rem 1.5rem;
 }
 
 .secondary-container {
@@ -85,7 +85,7 @@ hr {
 
 .secondary-info-box {
     display: flex;
-    padding: 2rem 1rem;
+    padding: 32px 16px;
     height: auto;
 }
 
@@ -93,20 +93,25 @@ hr {
     width: 90%;
     color: darkslategray;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 1rem;
 }    
 
 .gray-background {
     background-color: lightgray;
 }
 
+/* ALL DESKTOP AND TABLET sections styling */
+
+
+
 /* ALL MOBILE sections stylings */
 
-@media only screen and (max-width: 40rem) {
+@media only screen and (max-width: 639px) {
 
     section {
         display: block;
     }
+
 }
 
 /* HEADER */
@@ -115,7 +120,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    height: 64px;
+    height: 4rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -128,13 +133,13 @@ header {
     align-items: center;
     text-transform: uppercase;
     font-weight: lighter; 
-    font-size: 2rem;
+    font-size: 32px;
     color: gray;  
 }
 
 .logo {
-    height: 4rem; 
-    padding-left: 24px;
+    height: 64px; 
+    padding-left: 1.5rem;
 }
 
 .logo-plus-name span {
@@ -144,53 +149,42 @@ header {
 
 nav {
     display: flex;
-    padding-right: 24px;
+    padding-right: 1.5rem;
 }
 
 nav a {
-    padding: 0 .5rem;
+    padding: 0 8px;
 }
 
 /* DESKTOP header */
 
-@media only screen and (min-width: 62.5625rem) {
-    .tablet-mobile-header {
-        display: none;
-    }
-}
+
    
 /* TABLET header */
 
-@media only screen and (min-width: 40.0625rem) and (max-width: 62.5rem) {
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
   
-    .desktop-header {
-        display: none;
-    }
 
     nav {
         width: 50%;
         justify-content: space-around;
-        padding-left: 3rem;
+        padding-left: 48px;
     }
 
     .logo-plus-name {
-        min-width: 22.5rem;
+        min-width: 360px;
     }
 
 }
    
 /* MOBILE header */
 
-@media only screen and (max-width: 40rem) {
-
-    .desktop-header, .desktop-tablet-header {
-        display: none;
-    }
+@media only screen and (max-width: 640px) {
 
     nav {
         width: 75%;
         justify-content: space-around;
-        padding-left: 3rem;
+        padding-left: 48px;
     }
 }
 
@@ -198,22 +192,22 @@ nav a {
 
 .banner-section .secondary-container {
     justify-content: center;
-    padding-right: 1.5rem;
+    padding-right: 24px;
 }
 
 .banner-section .text-info-box {
-    padding: 1rem;
+    padding: 16px;
 }
 
 .banner-section p {
-    padding: 2rem 0 1.5rem 0;
+    padding: 32px 0 24px 0;
 }
 
 .banner-section .button {
     display: flex;
-    padding: .5rem 0;
+    padding: 8px 0;
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
     background-color: darkslategray;
     color: white;
     justify-content: center;
@@ -227,7 +221,7 @@ nav a {
 
 /* Banner section -- MOBILE ONLY */
 
-@media only screen and (max-width: 40rem) {
+@media only screen and (max-width: 639px) {
 
     .banner-section .primary-container {
         width: 100%;
@@ -236,7 +230,7 @@ nav a {
 
     .banner-section .secondary-container {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 32px 16px;
     }
 
     .banner-section .text-info-box {
@@ -248,39 +242,36 @@ nav a {
 /* Information Section DESKTOP and TABLET */
 
 .information-section .primary-container {
-    border-right: 1px lightgray solid;
+    border-right: .0625rem lightgray solid;
 }
 
 .information-section .primary-container p {
-    padding-top: 1.5rem;
+    padding-top: 24px;
 }
 
 .information-section .caption {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 400;
-    padding-top: 2rem;
+    padding-top: 32px;
 }
 
 .information-section .secondary-container {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .information-section .secondary-info-box {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    border-bottom: .0625rem solid lightgray;
     flex-grow: 1;
 }
 
 .information-section .secondary-container .img-container {
     width: 35%;  
-    min-width: 6.625rem;
-    padding-right: 1rem;
+    min-width: 106px;
+    padding-right: 16px;
 }
 
-.mobile-img {
-    display: none;
-}
 
 .information-section .description-box {
     line-height: 1.1;
@@ -302,11 +293,7 @@ nav a {
 
 /* Information Section MOBILE ONLY */
 
-@media only screen and (max-width: 40rem) {
-
-    .information-section .primary-container {
-        display: none;
-    }
+@media only screen and (max-width: 639px) {
 
     .information-section .secondary-container {
         width: 100%;
@@ -322,12 +309,7 @@ nav a {
         padding: 0;
     }
 
-    .desktop-tablet-img {
-        display: none;
-    }
-
     .mobile-img {
-        display: block;
         width: 100%;
     }
 
@@ -336,7 +318,7 @@ nav a {
     }
 
     .information-section .secondary-info-box .text-info-box {
-        padding-top: 1rem;
+        padding-top: 16px;
     }
 
     .information-section .gray-background {
@@ -348,7 +330,6 @@ nav a {
 /* Learning Section */
 
 .learning-section {
-    display: block;
     width: 100%;
 }
 
@@ -357,7 +338,7 @@ nav a {
     box-sizing: border-box;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 1rem 4.5rem;
+    padding: 16px 72px;
 }
 
 .learning-section .secondary-info-box {
@@ -366,11 +347,11 @@ nav a {
     text-align: left;
     background-color: white;
     padding: 0;
-    margin: 1rem;
+    margin: 16px;
 }
 
 .learning-section .text-info-box {
-    padding: 1rem 1rem 1.5rem 1rem;
+    padding: 16px 16px 24px 16px;
 }
 
 .learning-section a {
@@ -384,7 +365,7 @@ nav a {
 }
 
 .thesis-section h2 {
-    padding: 1.5rem 0;
+    padding: 24px 0;
 }
 
 .thesis-flex-container {
@@ -396,18 +377,18 @@ nav a {
 }
 
 .thesis-section .primary-container p {
-    padding-top: .5rem;
-    padding-bottom: 2rem;
+    padding-top: 8px;
+    padding-bottom: 32px;
 }
 
 .thesis-section .secondary-container {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     justify-content: flex-start;
 }
 
 .thesis-section .secondary-container .img-container {
     width: 35%;  
-    padding-right: 1rem;
+    padding-right: 16px;
 }
 
 .thesis-section .description-box {
@@ -424,12 +405,12 @@ nav a {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1.5rem 2rem 1.5rem;
+    padding: 16px 24px 32px 24px;
     color: darkslategray;
-    font-size: .75rem;
-    border-top: 1px lightgray solid;
+    font-size: 12px;
+    border-top: .0625rem lightgray solid;
 }
 
 footer a {
-    padding: 0 .5rem;
+    padding: 0 8px;
 }
