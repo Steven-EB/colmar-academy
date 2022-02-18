@@ -329,16 +329,15 @@ nav a {
 
 /* Learning Section */
 
-.learning-section {
-    width: 100%;
+section.learning-section {
+    display: block;
 }
 
 .learning-section .secondary-container {
-    width: 100%;
-    box-sizing: border-box;
+    width: auto;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 16px 72px;
+    padding: 16px 60px;
 }
 
 .learning-section .secondary-info-box {
@@ -356,6 +355,34 @@ nav a {
 
 .learning-section a {
     display: inline;
+}
+
+@media only screen and (max-width: 639px) {
+
+    .learning-section .title-container {
+        background-color: white;
+        border-top: 1px solid lightgray;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .learning-section .secondary-container, section.learning-section {
+        display: block;
+        background-color: white;
+        padding: 0;
+    }
+
+    .learning-section .secondary-info-box {
+        width: auto;
+        margin: .5rem 1rem;
+    }
+
+    .learning-section .text-info-box {
+        background-color: lightgray;
+        width: auto;
+        
+    }
+
+   
 }
 
 /* Thesis Section  */
